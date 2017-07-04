@@ -4,6 +4,16 @@
 # Log file
 *.log
 
+# IDEA workspace config
+.idea/
+
+# Application Build
+build/
+
+# Gradle 
+.gradle/
+gradle/
+
 # BlueJ files
 *.ctxt
 
