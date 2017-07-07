@@ -11,7 +11,7 @@ class QuickSort: Algorithm {
         val sortedList = java.util.ArrayList<Int>()
 
 
-        
+
 
 
 

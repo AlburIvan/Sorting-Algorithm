@@ -3,7 +3,7 @@ package com.raworkstudio.practice.bubblesort
 import com.raworkstudio.practice.core.Algorithm
 
 /**
- * Created by Ivan Alburquerque on 7/3/2017.
+ * https://www.wikiwand.com/en/Bubble_sort
  */
 class BubbleSort : Algorithm {
 
@@ -14,7 +14,9 @@ class BubbleSort : Algorithm {
     override fun sort(array: ArrayList<Int>): ArrayList<Int> {
         val sortedList = ArrayList<Int>()
 
+        // [5 1 4 2 8]
 
+        array
 
         return sortedList
     }
