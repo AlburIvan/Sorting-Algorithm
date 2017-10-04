@@ -15,6 +15,7 @@ class AlgorithmFactory {
             when(algorithm) {
                 AlgorithmTypes.BUBBLE_SORT -> return BubbleSort()
                 AlgorithmTypes.QUICK_SORT -> return QuickSort()
+                AlgorithmTypes.SLEEP_SORT -> return SleepSort()
             }
         }
     }
