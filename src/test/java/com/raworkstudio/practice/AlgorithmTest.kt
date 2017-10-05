@@ -13,7 +13,6 @@ import kotlin.system.measureTimeMillis
 //@RunWith(JUnit4::class)
 class AlgorithmTest {
 
-
     val unsortedArrayC1 = arrayListOf(1, 15, 25, 35, 10, 150, 75, 80, 4)
     val unsortedArrayC2 = arrayListOf(1, 15, 25, 35, 10, 150, 75, 80, 4, 255, 1506, 980, 20, 70, 35, 25, 34, 60, 459, 662, 99, 320, 510, 833)
     val unsortedArrayC3 = arrayListOf(1, 15, 25, 35, 10, 150, 75, 80, 4)
@@ -40,7 +39,13 @@ class AlgorithmTest {
         assert( executeAlgorithm(algorithm, unsortedArrayC1))
     }
 
+    @Test
+    fun `Testing Sleep Sort with Complexity 1`(): Unit {
 
+        val algorithm = AlgorithmFactory.get(AlgorithmTypes.SLEEP_SORT)
+
+        assert( executeAlgorithm(algorithm, unsortedArrayC1))
+    }
 
     private fun executeAlgorithm(algorithm: Algorithm, unsortedArray: ArrayList<Int>): Boolean {
 

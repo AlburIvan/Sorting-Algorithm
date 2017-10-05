@@ -7,7 +7,7 @@ enum class AlgorithmTypes {
 
     BUBBLE_SORT,
     QUICK_SORT,
-
+    SLEEP_SORT,
 
 
 }
