@@ -11,16 +11,25 @@ class SleepSort : Algorithm {
 
     override fun getDescription(): String = "This is sleep sort"
 
-    override fun sort(array: ArrayList<Int>): ArrayList<Int> {
+    override fun sort(nums: IntArray): ArrayList<Int> {
         val sortedList = ArrayList<Int>()
+        val taskExecutor = Executors.newFixedThreadPool(nums.size)
         for (num in nums) {
-            try {
-                Thread.sleep((num * 1000).toLong())
-                sortedList.add(num)
-            } catch (e: InterruptedException) {
+            taskExecutor.execute {
+                try {
+                    Thread.sleep((num * 1000).toLong())
+                    sortedList.add(num)
+                } catch (e: InterruptedException) {
 
+                }
             }
         }
+        taskExecutor.shutdown()
+        try {
+            taskExecutor.awaitTermination(java.lang.Long.MAX_VALUE, TimeUnit.NANOSECONDS)
+        } catch (e: InterruptedException) {
+        }
+
         return sortedList
     }
 }
