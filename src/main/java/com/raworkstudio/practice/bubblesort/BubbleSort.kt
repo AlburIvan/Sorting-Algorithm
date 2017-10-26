@@ -1,6 +1,7 @@
 package com.raworkstudio.practice.bubblesort
 
 import com.raworkstudio.practice.core.Algorithm
+import java.util.Collections.swap
 
 /**
  * https://www.wikiwand.com/en/Bubble_sort
@@ -11,14 +12,20 @@ class BubbleSort : Algorithm {
 
     override fun getDescription(): String = "This is bubble sort"
 
-    override fun sort(array: ArrayList<Int>): ArrayList<Int> {
-        val sortedList = ArrayList<Int>()
+    override fun sort(arr: ArrayList<Int>): ArrayList<Int> {
+        var swappedElements : Boolean;
+        do {
+            swappedElements = false;
+            for (i in 0..arr.size - 2){
+                if (arr[i] > arr[i + 1]){
+                    swap(arr, i, i + 1);
+                    swappedElements = true;
+                }
+            }
+        } while (swappedElements);
+        return arr;
 
-        // [5 1 4 2 8]
 
-        array
-
-        return sortedList
     }
 
 
