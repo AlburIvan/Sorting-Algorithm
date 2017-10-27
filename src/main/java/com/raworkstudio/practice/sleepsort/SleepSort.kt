@@ -15,7 +15,7 @@ class SleepSort : Algorithm {
 
     override fun getDescription(): String = "This is sleep sort"
 
-    override fun sort(nums: IntArray): ArrayList<Int> {
+    override fun sort(nums: ArrayList<Int>): ArrayList<Int> {
         val sortedList = ArrayList<Int>()
         val taskExecutor = Executors.newFixedThreadPool(nums.size)
         for (num in nums) {

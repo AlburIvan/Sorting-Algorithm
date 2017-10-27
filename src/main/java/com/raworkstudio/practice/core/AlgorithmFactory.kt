@@ -2,6 +2,7 @@ package com.raworkstudio.practice.core
 
 import com.raworkstudio.practice.bubblesort.BubbleSort
 import com.raworkstudio.practice.quicksort.QuickSort
+import com.raworkstudio.practice.sleepsort.SleepSort
 
 /**
  * Created by Ivan Alburquerque on 7/3/2017.
