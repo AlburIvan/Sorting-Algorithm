@@ -6,6 +6,7 @@ package com.raworkstudio.practice.core
 enum class AlgorithmTypes {
 
     BUBBLE_SORT,
+    INSERTION_SORT,
     QUICK_SORT,
     SLEEP_SORT,
 
