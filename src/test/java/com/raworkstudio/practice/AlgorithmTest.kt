@@ -30,6 +30,14 @@ class AlgorithmTest {
         assert( executeAlgorithm(algorithm, unsortedArrayC1))
     }
 
+    @Test
+    fun `Testing Insertion Sort with Complexity 1`(): Unit {
+
+        val algorithm = AlgorithmFactory.get(AlgorithmTypes.INSERTION_SORT)
+
+        assert( executeAlgorithm(algorithm, unsortedArrayC1))
+    }
+
 
     @Test
     fun `Testing Quick Sort with Complexity 1`(): Unit {
