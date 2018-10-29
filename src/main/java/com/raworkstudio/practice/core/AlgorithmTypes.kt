@@ -9,6 +9,7 @@ enum class AlgorithmTypes {
     INSERTION_SORT,
     QUICK_SORT,
     SLEEP_SORT,
+    HEAP_SORT
 
 
 }
