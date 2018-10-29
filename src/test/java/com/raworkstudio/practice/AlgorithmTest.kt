@@ -38,6 +38,14 @@ class AlgorithmTest {
         assert( executeAlgorithm(algorithm, unsortedArrayC1))
     }
 
+    @Test
+    fun `Testing Heap Sort with Complexity 1`(): Unit {
+
+        val algorithm = AlgorithmFactory.get(AlgorithmTypes.HEAP_SORT)
+
+        assert( executeAlgorithm(algorithm, unsortedArrayC1))
+    }
+
 
     @Test
     fun `Testing Quick Sort with Complexity 1`(): Unit {
